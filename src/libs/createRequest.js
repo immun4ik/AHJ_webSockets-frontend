@@ -18,7 +18,7 @@ export default async function createRequest(options) {
       return { status: response.status, message: 'Server found!' };
     }
 
-    return await response.json(); 
+    return await response.json(); //
   } catch (err) {
     return { error: true, status: 520 };
   }
